@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Svg, { G, Path, Circle } from "react-native-svg";
+import * as d3 from "d3";
 
 
 const Map = props => {
