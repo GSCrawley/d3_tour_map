@@ -1,15 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
+
+import Map from "./components/Map";
 
 export default function App() {
+  const dimensions = Dimensions.get("window");
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+      <Map
+            dimensions={dimensions}
+         />
+      </View>
+   );
+};
+
 
 const styles = StyleSheet.create({
   container: {
